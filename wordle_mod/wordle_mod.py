@@ -17,14 +17,14 @@ type = input("Make your choice: ")
 
 if type == '1':
     day_of_year = datetime.now().timetuple().tm_yday
-    idx = 195 + day_of_year
+    idx = 861 + day_of_year
     print(f"\nYou're playing Wordle #{idx}")
     word = word_list[idx]
 elif type == '2':
     month = input("Enter the Month: ")
     day = input("Enter the Day: ")
     day_of_year = date(2022,int(month),int(day)).timetuple().tm_yday
-    idx = 195 + day_of_year
+    idx = 861 + day_of_year
     print(f"\nYou're playing Wordle #{idx}")
     word = word_list[idx]
 elif type == '3': word = random.choice(word_list)
